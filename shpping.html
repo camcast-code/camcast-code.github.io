@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title>Shopping List</title>
+</head>
+<body>
+
+<h1>My shopping list</h1>
+
+<form>
+  <label for="item">Enter a new item:</label>
+  <input type="text"  id="item" />
+  <button>Add item</button>
+</form>
+
+<ul id="lista"></ul>
+<script>
+    const list = document.getElementById("lista");
+    const input = document.getElementById("item");
+    const button = document.querySelector("button");
+
+    button.addEventListener("click", (event) => {
+        event.preventDefault();
+
+        const newItem = input.value;
+        input.value = "";
+
+        const listItem = document.createElement("li");
+        const itemText = document.createElement("span");
+        const deleteButton = document.createElement("button");
+
+        itemText.textContent = newItem;
+        deleteButton.textContent = "Delete";
+
+        listItem.appendChild(itemText);
+        listItem.appendChild(deleteButton);
+
+        list.appendChild(listItem);
+
+        deleteButton.addEventListener("click", () => {
+            list.removeChild(listItem);
+        });
+
+        input.focus();
+    });
+</script>
+
+</boby>
+</html>

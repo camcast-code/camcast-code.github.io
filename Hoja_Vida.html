@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Hoja de Vida - camilo rodriguez</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #eef2f7, #d9e2ec);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #2563eb;
+}
+
+.header-info h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.header-info strong {
+    color: #2563eb;
+    font-weight: 600;
+}
+
+.header-info p {
+    margin: 6px 0;
+    color: #64748b;
+    font-size: 15px;
+}
+
+/* SECTIONS */
+.section {
+    margin-top: 35px;
+}
+
+.section h2 {
+    font-size: 20px;
+    color: #1e293b;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.section h2::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background: #2563eb;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+
+/* JOBS */
+.job {
+    margin-bottom: 20px;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.job-title {
+    font-weight: 600;
+    color: #111827;
+}
+
+.date {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+ul {
+    margin-top: 8px;
+    padding-left: 20px;
+    color: #475569;
+}
+
+/* SKILLS */
+
+
+
+.skills .skill-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #2563eb;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 25px;
+    margin: 6px 6px 0 0;
+    font-size: 13px;
+}
+
+.skill-item button {
+    background: white;
+    color: #2563eb;
+    border: none;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    cursor: pointer;
+    line-height: 18px;
+    padding: 0;
+    margin-left: 8px;
+}
+
+
+#skill-form {
+    margin-bottom: 15px;
+}
+
+#skill-form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 200px;
+}
+
+#skill-form button {
+    padding: 8px 12px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#skill-form button:hover {
+    background: #1d4ed8;
+}
+
+.skill-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #2563eb;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 25px;
+    margin: 6px 6px 0 0;
+    font-size: 13px;
+}
+
+.skill-item button {
+    background: white;
+    color: #2563eb;
+    border: none;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    cursor: pointer;
+    line-height: 18px;
+    padding: 0;
+}
+
+/*new skills*/
+
+.skills span {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 25px;
+    margin: 6px 6px 0 0;
+    font-size: 13px;
+    transition: 0.3s ease;
+}
+
+.skills span:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* LINKS */
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+      
+        <img src="foto.png" alt="Foto de perfil" class="profile-img">
+
+        <div class="header-info">
+            <h1>camilo rodriguez</h1>
+            <p><strong>Desarrollador Web Full Stack</strong></p>
+            <p>Email: camilo151210@hotmail.com</p>
+            <p>Teléfono: +1 333 458 968</p>
+            <p>Ciudad: cali, Colombia</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Perfil Profesional</h2>
+        <p>
+            Desarrollador web con más de 3 años de experiencia en la creación de aplicaciones
+            modernas y responsivas. Especializado en tecnologías Frontend y Backend.
+            Me caracterizo por ser responsable, proactivo y con gran capacidad para trabajar en equipo.
+        </p>
+    </div>
+    <div class="section">
+        <h2>Información Personal</h2>
+        <div class="info-grid">
+            <p><strong>Fecha de nacimiento:</strong> 1/07/2000</p>
+            <p><strong>Estado civil:</strong> Soltero</p>
+            <p><strong>Nacionalidad:</strong> Colombiano</p>
+            <p><strong>LinkedIn:</strong><a href="https://www.linkedin.com/in/camilo-casta%C3%B1o-rodriguez-5874b9383/"> dale aquí</a></p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Experiencia Laboral</h2>
+
+        <div class="job">
+            <div class="job-header">
+            <span class="job-title">Desarrollador Frontend - Empresa XYZ</span>
+            <span class="date">2022 - 2024</span>
+            </div>
+            <ul>
+                <li>Desarrollo de interfaces modernas con HTML, CSS y JavaScript.</li>
+                <li>Optimización de rendimiento en aplicaciones web.</li>
+                <li>Trabajo colaborativo con equipos de diseño y backend.</li>
+            </ul>
+        </div>
+
+        <div class="job clearfix">
+            <span class="job-title">Practicante de Desarrollo - Empresa ABC</span>
+            <span class="date">2021 - 2022</span>
+            <ul>
+                <li>Soporte y mantenimiento de sitios web corporativos.</li>
+                <li>Corrección de errores y mejoras visuales.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="section">
+        <h2>Educación</h2>
+
+        <div class="job clearfix">
+            <span class="job-title">Ingeniería de Sistemas - Universidad ABC</span>
+            <span class="date">2018 - 2022</span>
+            <p>Formación en desarrollo de software, bases de datos y arquitectura web.</p>
+        </div>
+
+    </div>
+
+    <div class="section">
+    <h2>Habilidades Técnicas</h2>
+
+    <form id="skill-form">
+        <input type="text" id="skill-input" placeholder="Agregar habilidad">
+        <button type="submit">Agregar</button>
+    </form>
+
+    <div class="skills" id="skills-list">
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>JavaScript</span>
+        <span>React</span>
+        <span>Node.js</span>
+        <span>MySQL</span>
+        <span>Git</span>
+        <span>Bootstrap</span>
+    </div>
+</div>
+
+
+    <div class="section">
+        <h2>Idiomas</h2>
+        <ul>
+            <li>Español - Nativo</li>
+            <li>Inglés - Intermedio</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Referencias</h2>
+        <p>Disponibles a solicitud.</p>
+    </div>
+
+</div>
+
+<script>
+const form = document.getElementById("skill-form");
+const input = document.getElementById("skill-input");
+const skillsList = document.getElementById("skills-list");
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const newSkill = input.value.trim();
+    if (newSkill === "") return;
+
+   
+    const skillItem = document.createElement("span");
+    skillItem.textContent = newSkill;
+    skillItem.classList.add("skill-item");  
+
+    
+    const deleteButton = document.createElement("button");
+    deleteButton.textContent = "×";
+
+   
+    deleteButton.addEventListener("click", () => {
+        skillsList.removeChild(skillItem);
+    });
+
+    skillItem.appendChild(deleteButton);
+
+    skillsList.appendChild(skillItem);
+
+    input.value = "";
+    input.focus();
+});
+
+
+
+</script>
+
+</body>
+</html>
